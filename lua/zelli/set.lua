@@ -1,39 +1,81 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- disabled netrw for nvim-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.keymap.set("n", "<leader>pt", vim.cmd.NvimTreeFocus) -- focus nvim tree
+vim.keymap.set("n", "<leader>ptc", vim.cmd.NvimTreeClose) -- close nvim tree
+
+-- Move selection up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- line numbers
+vim.opt.nu = true -- show line numbers
+vim.opt.relativenumber = true -- show relative line numbers
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+-- tabs and spaces
+vim.opt.tabstop = 4 -- make a tab count 4 spaces
+vim.opt.softtabstop = 4 -- make a tab count 4 spaces while editing
+vim.opt.shiftwidth = 4  -- how much to do on intendation
+vim.opt.expandtab = true -- use spaces instead of tabs
 
-vim.opt.smartindent = true
+vim.opt.smartindent = true -- auto indent on new line etc.
 
-vim.opt.wrap = false
+vim.opt.wrap = true -- wrap lines
 
-vim.opt.swapfile = false
-vim.opt.backup = false
+vim.opt.swapfile = false -- dont use a swap file
+vim.opt.backup = false -- dont use a backup file
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
 
-vim.opt.termguicolors = true
+vim.opt.termguicolors = true -- use terminal colors
 
 vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.cmdheight = 2  -- more space in the neovim command line for displaying messages
+
+vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
+vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for completion
+vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
+vim.opt.fileencoding = "utf-8"-- the encoding written to a file
+vim.opt.mouse = "a" -- allow the mouse to be used in neovim
+vim.opt.pumheight = 10 -- pop up menu height
+vim.opt.showmode = false                      -- we don't need to see things like -- INSERT -- anymore
+vim.opt.showtabline = 2                       -- always show tabs
+vim.opt.smartcase = true                      -- smart case
+vim.opt.splitbelow = true                     -- force all horizontal splits to go below current window
+vim.opt.splitright = true                     -- force all vertical splits to go to the right of current window
+vim.opt.swapfile = false                      -- creates a swapfile
+vim.opt.termguicolors = true                  -- set term gui colors (most terminals support this)
+vim.opt.timeoutlen = 1000                     -- time to wait for a mapped sequence to complete (in milliseconds)
+vim.opt.undofile = true                       -- enable persistent undo
+vim.opt.writebackup = false                   -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+vim.opt.expandtab = true                        -- convert tabs to spaces
+vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
+vim.opt.tabstop = 2                             -- insert 2 spaces for a tab
+vim.opt.cursorline = true                       -- highlight the current line
+vim.opt.signcolumn = "yes"                      -- always show the sign column, otherwise it would shift the text each time
+
+
+-- auto close brackets and '' or "" 
 vim.api.nvim_set_keymap('i', '"', '""<left>', { noremap = true })
 vim.api.nvim_set_keymap('i', "'", "''<left>", { noremap = true })
 vim.api.nvim_set_keymap('i', "(", "()<left>", { noremap = true })
 vim.api.nvim_set_keymap('i', "[", "[]<left>", { noremap = true })
 vim.api.nvim_set_keymap('i', "{", "{}<left>", { noremap = true })
 vim.api.nvim_set_keymap('i', "{<CR>", "{<CR>}<left>", { noremap = true })
+
+
+
+
+
+

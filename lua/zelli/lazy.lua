@@ -26,6 +26,7 @@ require("lazy").setup({
   { "ThePrimeagen/vim-be-good" },
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   { "mbbill/undotree" },
+  { "tpope/vim-fugitive" },
   {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',

@@ -1,2 +1,3 @@
 # nvim-config
-My nvim config (Always WIP)
+This repo contains my nvim config (which probably will always be wip)
+

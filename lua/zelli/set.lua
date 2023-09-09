@@ -3,10 +3,12 @@ vim.g.mapleader = " "
 -- disabled netrw for nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+-- nvim tree line bindings
 vim.keymap.set("n", "<leader>pt", vim.cmd.NvimTreeFocus) -- focus nvim tree
 vim.keymap.set("n", "<leader>ptc", vim.cmd.NvimTreeClose) -- close nvim tree
 
--- Move selection up and down
+-- move selection up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 

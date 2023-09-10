@@ -28,6 +28,9 @@ require("lazy").setup({
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   { "mbbill/undotree" },
   { "tpope/vim-fugitive" },
+  { "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
   {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',

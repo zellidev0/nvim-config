@@ -22,6 +22,7 @@ require("lazy").setup({
       "nvim-lua/plenary.nvim",
     },
   },
+  { 'nvim-tree/nvim-web-devicons', opt = true },
   { "marko-cerovac/material.nvim" },
   { "ThePrimeagen/vim-be-good" },
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },

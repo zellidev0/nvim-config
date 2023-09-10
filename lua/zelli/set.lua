@@ -68,16 +68,3 @@ vim.opt.cursorline = true                       -- highlight the current line
 vim.opt.signcolumn = "yes"                      -- always show the sign column, otherwise it would shift the text each time
 
 
--- auto close brackets and '' or "" 
-vim.api.nvim_set_keymap('i', '"', '""<left>', { noremap = true })
-vim.api.nvim_set_keymap('i', "'", "''<left>", { noremap = true })
-vim.api.nvim_set_keymap('i', "(", "()<left>", { noremap = true })
-vim.api.nvim_set_keymap('i', "[", "[]<left>", { noremap = true })
-vim.api.nvim_set_keymap('i', "{", "{}<left>", { noremap = true })
-vim.api.nvim_set_keymap('i', "{<CR>", "{<CR>}<left>", { noremap = true })
-
-
-
-
-
-

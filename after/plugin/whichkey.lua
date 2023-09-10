@@ -1,5 +1,5 @@
 local wk = require("which-key")
- 
+
 wk.register({
   ["<leader>f"] = { name = "telescope" },
   ["<leader>ff"] = { "<cmd>Telescope find_files<cr>", "Find File" },

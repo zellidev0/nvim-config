@@ -8,7 +8,7 @@ require'nvim-treesitter.configs'.setup {
         additional_vim_regex_highlighting = false,
     },
     incremental_selection = {
-        enable = tnue,
+        enable = true,
         keymaps = {
             init_selection = "gnn", -- set to `false` to disable one of the mappings
             node_incremental = "grn",

@@ -46,6 +46,7 @@ require("lazy").setup({
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   },
+  { "lewis6991/gitsigns.nvim" },
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",

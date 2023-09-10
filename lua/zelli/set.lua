@@ -1,5 +1,9 @@
 vim.g.mapleader = " "
 
+-- setting color theme
+vim.g.material_style = "deep ocean" 
+-- darker, lighter, oceanic, palenight, deep ocean
+
 -- disabled netrw for nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -20,7 +24,7 @@ vim.opt.expandtab = true -- use spaces instead of tabs
 
 vim.opt.smartindent = true -- auto indent on new line etc.
 
-vim.opt.wrap = true -- wrap lines
+vim.opt.wrap = false -- wrap lines
 
 vim.opt.swapfile = false -- dont use a swap file
 vim.opt.backup = false -- dont use a backup file

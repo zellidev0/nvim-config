@@ -20,8 +20,8 @@ wk.register({
 })
 
 wk.register({
-  ["<leader>w"] = { name = "<ctrl-w> window management" },
-  ["<leader><c-w>"] = { name = "window management" },
+  ["<leader>e"] = { name = "trouble" },
+  ["<leader>et"] = {"<cmd>TroubleToggle<cr>", "Toggle trouble" },
 })
 
 wk.register({

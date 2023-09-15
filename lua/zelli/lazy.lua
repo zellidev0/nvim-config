@@ -21,6 +21,7 @@ require("lazy").setup({
     tag = "0.1.2",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
+  "cohama/lexima.vim",
   { 'nvim-tree/nvim-web-devicons', opt = true },
   { "marko-cerovac/material.nvim" },
   { "romgrk/fzy-lua-native" },
@@ -30,6 +31,14 @@ require("lazy").setup({
   { "tpope/vim-fugitive" },
   { "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+    "gelguy/wilder.nvim",
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+      'romgrk/fzy-lua-native',
+      opt = true
+  }
   },
   {
     'VonHeikemen/lsp-zero.nvim',

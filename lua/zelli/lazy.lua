@@ -17,6 +17,11 @@ require("lazy").setup({
     "folke/neoconf.nvim",
     cmd = "Neoconf",
   },
+  {
+    'numToStr/Comment.nvim',
+    opts = {},
+    lazy = false,
+  },
   "folke/neodev.nvim",
   "github/copilot.vim",
   {

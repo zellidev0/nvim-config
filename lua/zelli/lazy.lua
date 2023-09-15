@@ -13,7 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   "folke/which-key.nvim",
-  { "folke/neoconf.nvim", cmd = "Neoconf" },
+  {
+    "folke/neoconf.nvim",
+    cmd = "Neoconf",
+  },
   "folke/neodev.nvim",
   "github/copilot.vim",
   {
@@ -22,14 +25,15 @@ require("lazy").setup({
     dependencies = { "nvim-lua/plenary.nvim" },
   },
   "cohama/lexima.vim",
-  { 'nvim-tree/nvim-web-devicons', opt = true },
+  { 'nvim-tree/nvim-web-devicons',     opt = true },
   { "marko-cerovac/material.nvim" },
   { "romgrk/fzy-lua-native" },
   { "ThePrimeagen/vim-be-good" },
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   { "mbbill/undotree" },
   { "tpope/vim-fugitive" },
-  { "folke/trouble.nvim",
+  {
+    "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
@@ -38,21 +42,21 @@ require("lazy").setup({
       'nvim-tree/nvim-web-devicons',
       'romgrk/fzy-lua-native',
       opt = true
-  }
+    }
   },
   {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
     dependencies = {
       -- LSP Support
-      {'neovim/nvim-lspconfig'},             -- Required
-      {'williamboman/mason.nvim'},           -- Optional
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      { 'neovim/nvim-lspconfig' },             -- Required
+      { 'williamboman/mason.nvim' },           -- Optional
+      { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},     -- Required
-      {'hrsh7th/cmp-nvim-lsp'}, -- Required
-      {'L3MON4D3/LuaSnip'},     -- Required
+      { 'hrsh7th/nvim-cmp' },     -- Required
+      { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+      { 'L3MON4D3/LuaSnip' },     -- Required
     }
   },
   {
@@ -77,5 +81,3 @@ require("lazy").setup({
     end,
   }
 })
-
-

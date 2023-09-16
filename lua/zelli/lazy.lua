@@ -18,6 +18,10 @@ require("lazy").setup({
     cmd = "Neoconf",
   },
   {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+  {
     'numToStr/Comment.nvim',
     opts = {},
     lazy = false,

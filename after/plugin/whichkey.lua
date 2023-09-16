@@ -6,6 +6,7 @@ wk.register({
   ["<leader>fg"] = { "<cmd>Telescope git_files<cr>", "Find Git File" },
   ["<leader>fr"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
   ["<leader>fl"] = { "<cmd>Telescope live_grep<cr>", "Find live grep" },
+  ["<leader>fb"] = { "<cmd>Telescope buffers<cr>", "Find buffers" },
 })
 
 wk.register({

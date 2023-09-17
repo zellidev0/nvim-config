@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 -- setting color theme
-vim.g.material_style = "deep ocean"
+vim.g.material_style = "darker"
 -- darker, lighter, oceanic, palenight, deep ocean
 
 -- disabled netrw for nvim-tree

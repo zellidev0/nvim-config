@@ -36,6 +36,7 @@ wk.register({
   ["<leader>cr"] = { "<cmd>Gitsigns reset_hunk<cr>", "Reset Hunk" },
   ["<leader>cb"] = { "<cmd>Gitsigns blame_line<cr>", "Blame" },
   ["<leader>cd"] = { "<cmd>Gitsigns diffthis<cr>", "Diff Hunk" },
+  ["<leader>cg"] = { "<cmd>lua _lazygit_toggle()<cr>", "Lazy Git" },
 })
 wk.register({
   ["<leader>g"] = { name = "git" },

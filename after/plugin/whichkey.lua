@@ -29,6 +29,15 @@ wk.register({
 })
 
 wk.register({
+  ["<leader>c"] = { name = "gitsigns" },
+  ["<leader>cp"] = { "<cmd>Gitsigns preview_hunk<cr>", "Preview Hunk" },
+  ["<leader>cs"] = { "<cmd>Gitsigns stage_hunk<cr>", "Stage Hunk" },
+  ["<leader>cu"] = { "<cmd>Gitsigns undo_stage_hunk<cr>", "Undo stage Hunk" },
+  ["<leader>cr"] = { "<cmd>Gitsigns reset_hunk<cr>", "Reset Hunk" },
+  ["<leader>cb"] = { "<cmd>Gitsigns blame_line<cr>", "Blame" },
+  ["<leader>cd"] = { "<cmd>Gitsigns diffthis<cr>", "Diff Hunk" },
+})
+wk.register({
   ["<leader>g"] = { name = "git" },
   ["<leader>gg"] = { "<cmd>Git<cr>", "Git status" },
 })

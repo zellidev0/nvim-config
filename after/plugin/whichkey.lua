@@ -22,10 +22,10 @@ wk.register({
 
 wk.register({
   ["<leader>e"] = { name = "trouble" },
-  ["<leader>et"] = {"<cmd>TroubleToggle<cr>", "Toggle trouble" },
-  ["<leader>ew"] = {"<cmd>Trouble workspace_diagnostics<cr>", "Toggle workspace diagnostics" },
-  ["<leader>ed"] = {"<cmd>Trouble document_diagnostics<cr>", "Toggle document diagnostics" },
-  ["<leader>eq"] = {"<cmd>Trouble quickfix<cr>", "Toggle quickfix" },
+  ["<leader>et"] = { "<cmd>TroubleToggle<cr>", "Toggle trouble" },
+  ["<leader>ew"] = { "<cmd>Trouble workspace_diagnostics<cr>", "Toggle workspace diagnostics" },
+  ["<leader>ed"] = { "<cmd>Trouble document_diagnostics<cr>", "Toggle document diagnostics" },
+  ["<leader>eq"] = { "<cmd>Trouble quickfix<cr>", "Toggle quickfix" },
 })
 
 wk.register({

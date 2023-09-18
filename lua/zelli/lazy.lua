@@ -102,3 +102,7 @@ require("lazy").setup({
 
 -- Maybe later
 -- https://github.com/folke/noice.nvim
+-- https://github.com/jubnzv/virtual-types.nvim
+-- https://github.com/simrat39/symbols-outline.nvim
+-- https://github.com/stevearc/dressing.nvim
+-- https://github.com/rockerBOO/awesome-neovim

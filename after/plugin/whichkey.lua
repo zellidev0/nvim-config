@@ -10,6 +10,13 @@ wk.register({
 })
 
 wk.register({
+  ["<leader>d"] = { name = "debugger" },
+  ["<leader>dt"] = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle DapUi" },
+  ["<leader>db"] = { "<cmd>DapToggleBreakpoint<cr>", "Toggle Breakpoint" },
+  ["<leader>dc"] = { "<cmd>DapContinue<cr>", "Debugger continue" },
+})
+
+wk.register({
   ["<leader>u"] = { name = "undotree" },
   ["<leader>ut"] = { "<cmd>UndotreeToggle<cr>", "Toggle undotree" },
 })

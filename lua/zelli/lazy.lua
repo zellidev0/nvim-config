@@ -21,6 +21,12 @@ require("lazy").setup({
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
+  { "leoluz/nvim-dap-go" },
+  { "theHamsta/nvim-dap-virtual-text" },
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = { "mfussenegger/nvim-dap" },
+  },
   {
     'akinsho/toggleterm.nvim',
     version = "*",

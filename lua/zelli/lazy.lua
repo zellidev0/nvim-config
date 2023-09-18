@@ -99,3 +99,6 @@ require("lazy").setup({
     },
   }
 })
+
+-- Maybe later
+-- https://github.com/folke/noice.nvim

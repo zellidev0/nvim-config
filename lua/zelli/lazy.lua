@@ -17,6 +17,7 @@ require("lazy").setup({
     "folke/neoconf.nvim",
     cmd = "Neoconf",
   },
+  { 'kosayoda/nvim-lightbulb' },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },

@@ -49,3 +49,10 @@ wk.register({
   ["<leader>gg"] = { "<cmd>Git<cr>", "Git status" },
   ["<leader>gl"] = { "<cmd>lua _lazygit_toggle()<cr>", "Lazy Git" },
 })
+
+
+wk.register({
+  ["<leader>cg"] = { "<cmd>ChatGPT<cr>", "Open ChatGPT" },
+  ["<leader>cga"] = { "<cmd>ChatGPTActAs<cr>", "Open ChatGPT Act as" },
+  ["<leader>cgi"] = { "<cmd>ChatGPTEditWithInstructions<cr>", "Open ChatGPT Interactive" },
+})

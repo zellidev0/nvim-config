@@ -64,6 +64,15 @@ require("lazy").setup({
     tag = "0.1.2",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
+  {
+    'akinsho/flutter-tools.nvim',
+    lazy = false,
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim',   -- optional for vim.ui.select
+    },
+    config = true,
+  },
   "cohama/lexima.vim",
   { 'nvim-tree/nvim-web-devicons',     opt = true },
   { "marko-cerovac/material.nvim" },
